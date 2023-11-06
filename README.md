@@ -242,7 +242,7 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
 ```
 ## Authors
 <details>
-    <summary>Sall Mohamed Abdelrasoul</summary>
+    <summary>Sally Mohamed Abdelrasoul</summary>
     <ul>
     <li><a href="https://github.com/sallyMohamed">Github</a></li>
     <li><a href="mailto:engsallycis@gmail.com">e-mail</a></li>
