@@ -1,4 +1,4 @@
-**AirBnB clone - done by
+***AirBnB clone - done by
 
 
 1-
@@ -11,8 +11,9 @@ engsallycis@gmail.com
 
 
 2-
-Sara Ahmed Mohamed*
+Sara Ahmed Mohamed
 Github
 www.github.com/sarora2200
 e-mail
-sarora2200@gmail.com"
+sarora2200@gmail.com
+
