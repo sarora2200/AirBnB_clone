@@ -56,7 +56,7 @@ class TestStateInstantiation(unittest.TestCase):
 
     def test_Str_Representation(self):
         Dt = datetime.today()
-        Dt_repr = repr(dt)
+        Dt_repr = repr(Dt)
         St = State()
         St.id = "123456"
         St.created_at = st.updated_at = dt
@@ -72,7 +72,7 @@ class TestStateInstantiation(unittest.TestCase):
 
     def test_Instantiation_With_Kwargs(self):
         Dt = datetime.today()
-        Dt_iso = dt.isoformat()
+        Dt_iso = Dt.isoformat()
         St = State(id="345", created_at=Dt_iso, updated_at=Dt_iso)
         self.assertEqual(St.id, "345")
         self.assertEqual(St.created_at, Dt)
@@ -129,7 +129,7 @@ class TestState_Save(unittest.TestCase):
     def test_Save_Updates_File(self):
         St = State()
         St.save()
-        Stid = "State." + st.id
+        Stid = "State." + St.id
         with open("file.json", "r") as f:
             self.assertIn(Stid, f.read())
 
