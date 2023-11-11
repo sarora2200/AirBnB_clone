@@ -4,7 +4,6 @@
 import json
 import os
 from json.decoder import JSONDecodeError
-from .errors import *
 from models.base_model import BaseModel
 from datetime import datetime
 
@@ -63,9 +62,9 @@ class FileStorage:
                          for k, v in obj_dicst.items()}
             FileStorage.__objects = obj_dicst
 
-    def attributes(self):
+    def Attributes(self):
         """AttributesTypes"""
-        attributes = {
+        Attributes = {
             "BaseModel":
                      {"id": str,
                       "created_at": datetime.datetime,
@@ -99,4 +98,4 @@ class FileStorage:
                          "user_id": str,
                          "text": str}
         }
-        return attributes
+        return Attributes

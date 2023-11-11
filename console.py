@@ -24,12 +24,12 @@ class HBNBCommand(cmd.Cmd):
 
         Match = re.search(r"^(\w*)\.(\w+)(?:\(([^)]*)\))$", line)
 
-        if not match:
+        if not Match:
             return line
 
-        Classname = match.group(1)
-        Method = match.group(2)
-        Args = match.group(3)
+        Classname = Match.group(1)
+        Method = Match.group(2)
+        Args = Match.group(3)
 
         Match_Uid_and_Args = re.search('^"([^"]*)"(?:, (.*))?$', Args)
 
@@ -134,7 +134,7 @@ class HBNBCommand(cmd.Cmd):
         if not line:
             print("** class name missing **")
         else:
-            wWrds = line.split(' ')
+            Words = line.split(' ')
             if Words[0] not in storage.classes():
                 print("** class doesn't exist **")
             elif len(Words) < 2:
@@ -184,13 +184,13 @@ class HBNBCommand(cmd.Cmd):
             return
 
         Rex = r'^(\S+)(?:\s(\S+)(?:\s(\S+)(?:\s((?:"[^"]*")|(?:(\S)+)))?)?)?'
-        Match = re.search(rex, line)
-        Classname = match.group(1)
-        Uid = match.group(2)
-        Attribute = match.group(3)
-        Value = match.group(4)
+        Match = re.search(Rex, line)
+        Classname = Match.group(1)
+        Uid = Match.group(2)
+        Attribute = Match.group(3)
+        Value = Match.group(4)
 
-        if not match:
+        if not Match:
             print("** class name missing **")
         elif Classname not in storage.classes():
             print("** class doesn't exist **")
