@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 """FileStorage ModelAndclass."""
 
+import datetime
 import json
 import os
-from json.decoder import JSONDecodeError
-from models.base_model import BaseModel
-from datetime import datetime
-
 
 class FileStorage:
 
