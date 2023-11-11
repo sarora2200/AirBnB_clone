@@ -1,12 +1,17 @@
-**AirBnB clone - The console**
-*Authors
-*Sally Mohamed Abdelrasoul*
+**AirBnB clone - done by
+
+
+1-
+Sally Mohamed Abdelrasoul
 Github
 www.github.com/sallyMohamed
 e-mail
 engsallycis@gmail.com
 -------------------------------
-*Sara Ahmed Mohamed*
+
+
+2-
+Sara Ahmed Mohamed*
 Github
 www.github.com/sarora2200
 e-mail
