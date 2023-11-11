@@ -1,4 +1,4 @@
-## **AirBnB**
+**AirBnB**
 
 ## 1 Introduction
 
@@ -225,7 +225,6 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
 2
 (hbnb)
 ```
-
 * update
 
 > *Updates an instance based on the class name, id, and kwargs passed.*
@@ -247,5 +246,3 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
     <li><a href="mailto:sarora2200@gmail.com">e-mail</a></li>
     </ul>
 </details>
-
-
