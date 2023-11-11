@@ -59,8 +59,8 @@ class TestStateInstantiation(unittest.TestCase):
         Dt_repr = repr(Dt)
         St = State()
         St.id = "123456"
-        St.created_at = st.updated_at = dt
-        Ststr = st.__str__()
+        St.created_at = St.updated_at = Dt
+        Ststr = St.__str__()
         self.assertIn("[State] (123456)", Ststr)
         self.assertIn("'id': '123456'", Ststr)
         self.assertIn("'created_at': " + Dt_repr, Ststr)
@@ -156,7 +156,7 @@ class TestState_To_Dict(unittest.TestCase):
 
     def test_To_Dict_Datetime_Attributes_Are_Strs(self):
         St = State()
-        St_dict = st.to_dict()
+        St_dict = St.to_dict()
         self.assertEqual(str, type(St_dict["id"]))
         self.assertEqual(str, type(St_dict["created_at"]))
         self.assertEqual(str, type(St_dict["updated_at"]))
