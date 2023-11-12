@@ -14,6 +14,34 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = "(hbnb)"
 
+     def do_BaseModel(self, line):
+        """Placeholder for handling commands for BaseModel."""
+        self.do_update(line)
+
+    def do_User(self, line):
+        """Placeholder for handling commands for User."""
+        self.do_update(line)
+
+    def do_State(self, line):
+        """Placeholder for handling commands for State."""
+        self.do_update(line)
+
+    def do_City(self, line):
+        """Placeholder for handling commands for City."""
+        self.do_update(line)
+
+    def do_Amenity(self, line):
+        """Placeholder for handling commands for Amenity."""
+        self.do_update(line)
+
+    def do_Place(self, line):
+        """Placeholder for handling commands for Place."""
+        self.do_update(line)
+
+    def do_Review(self, line):
+        """Placeholder for handling commands for Review."""
+        self.do_update(line)
+
     def default(self, line):
         """Catch commands if nothing else matches then."""
         self._precmd(line)
