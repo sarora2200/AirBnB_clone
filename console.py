@@ -47,7 +47,7 @@ class HBNBCommand(cmd.Cmd):
             Match_Dict = re.search('^({.*})$', Attr_or_Dict)
 
             if Match_Dict:
-                self.Update_Dict(Classname, Uid, Match_Dict.group(1))
+                self.Update_dict(Classname, Uid, Match_Dict.group(1))
                 return ""
 
             Match_Attr_and_Value = re.search(
