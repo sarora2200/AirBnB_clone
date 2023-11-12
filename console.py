@@ -62,7 +62,7 @@ class HBNBCommand(cmd.Cmd):
 
     def Update_dict(self, Classname, Uid, o_Dict):
         """Helper method for update() with a dictionary."""
-        o = o_dict.replace("'", '"')
+        o = o_Dict.replace("'", '"')
         e = json.loads(o)
         if not Classname:
             print("** class name missing **")
